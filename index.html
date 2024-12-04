@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DDN 336</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!--Fonts & Icons-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_drop_down_circle" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+
+</head>
+
+
+<body>
+    <aside id="side-menu" class="side-menu">
+        <button class="close-menu" onclick="closeNav()">
+            <span class="material-symbols-outlined">
+                menu
+            </span>
+        </button>
+        <div id="menu-links" class="menu-links">
+            <a href="#">About Us</a>
+            <a href="#">Music</a>
+            <a href="#">Musicians</a>
+            <a href="#">Support Us</a>
+        </div>
+    </aside>
+
+    <header class="header">
+        <div onclick="openPopup()">
+            <img src="Images/logo_thegrandcollective.jpg" width="40px" alt="The Grand Collective Logo">
+            <span id="Popup" class="popup">Hey! You found me! :D</span>
+        </div>
+        <nav class="nav web_hamburger">
+            <a href="#" class="nav-link">Schedule</a>
+            <a href="#" class="nav-link">Music</a>
+            <a href="#" class="nav-link">Musicians</a>
+            <a href="#" class="nav-link">About Us</a>
+            <a href="#" class="nav-link">Support Us</a>
+            <img src="Images/Search Icon.jpg" width="30px" alt="Search Icon">
+        </nav>
+        <button class="burger-icon" onclick="openNav()">
+            <span class="material-symbols-outlined">
+                menu
+            </span>
+        </button>
+
+    </header>
+
+    <!--Section 1 (Hero)-->
+    <section class="hero-image">
+        <div class="hero-text">
+            <h1 class="title"> The Grand Collective</h1>
+            <p class="description">A GCU band that wants to share the gospel with others</p>
+        </div>
+    </section>
+
+
+    <!--Section 2-->
+    <!--
+    <section class="container">
+        <h2>Schedule</h2>
+        <div>
+            <article>
+                <div class="dd-menu">
+                    <img src="Images/11_Icon.jpg" width="60px" alt="10/11">
+                    <p>Arizona Financial Theatre; Phx - AZ</p>
+                    <p>6 pm - 11:30 pm</p>
+                    <button class="material-symbols-outlined"> arrow_drop_down_circle </button>
+                </div>
+            </article>
+        </div>
+        <div>
+            <article>
+                <div class="dd-menu">
+                    <img src="Images/12_Icon.jpg" width="60px" alt="10/12">
+                    <p>Arizona Financial Theatre; Phx - AZ</p>
+                    <p>6 pm - 11:30 pm</p>
+                    <button class="material-symbols-outlined"> arrow_drop_down_circle </button>
+                </div>
+            </article>
+        </div>
+        <div>
+            <article>
+                <div class="dd-menu">
+                    <img src="Images/13_Icon.jpg" width="60px" alt="10/13">
+                    <p>Arizona Financial Theatre; Phx - AZ</p>
+                    <p>6 pm - 11:30 pm</p>
+                    <button class="material-symbols-outlined"> arrow_drop_down_circle </button>
+            </article>
+        </div>
+        <div>
+            <article>
+                <div class="dd-menu">
+                    <img src="Images/18_Icon.jpg" width="60px" alt="10/18">
+                    <p>Orpheum Theatre; Downtown Phx - AZ</p>
+                    <p>7:30 pm - 1 am</p>
+                    <button class="material-symbols-outlined"> arrow_drop_down_circle </button>
+            </article>
+        </div>
+        <div>
+            <article>
+                <div class="dd-menu">
+                    <img src="Images/19_Icon.png" width="60" alt="10/19">
+                    <p>Orpheum Theatre; Downtown Phx - AZ</p>
+                    <p>7:30 pm - 1 am</p>
+                    <button class="material-symbols-outlined"> arrow_drop_down_circle </button>
+                </div>
+            </article>
+            <a href="#" width="184" alt="See More"> See More</a>
+    </section>
+-->
+
+    <!--Section 3-->
+    <!--
+    <section class="container">
+        <h2>Most Popular Songs</h2>
+
+        <article>
+            <img src="Images/fullyknown_handinsky.png" width="93" alt="I belong to you album cover">
+            <p>I Belong to You</p>
+            <p>6:17</p>
+            <a href="#" width="41" alt="three buttons that lead to more"> ... </a>
+        </article>
+        <article>
+            <img src="Images/fullyknown_grass.png" width="93" alt="Renew my Soul album cover">
+            <p>Renew my Soul</p>
+            <p>4:52</p>
+            <a href="#" width="41" alt="three buttons that lead to more"> ... </a>
+        </article>
+        <article>
+            <img src="Images/fullyknown_brandedleather.png" width="93" alt="Close album cover">
+            <p>Close</p>
+            <p>4:57</p>
+            <a href="#" width="41" alt="three buttons that lead to more"> ... </a>
+        </article>
+        <article>
+            <img src="Images/fullyknown_streetlightsinnight.png" width="93" alt="Search Me album cover">
+            <p>Search Me</p>
+            <p>5:13</p>
+            <a href="#" width="41" alt="three buttons that lead to more"> ... </a>
+        </article>
+        <article>
+            <img src="Images/fullyknown_roadinindiana.png" width="93" alt="Micah 7 album cover">
+            <p>Micah 7</p>
+            <p>4:52</p>
+            <a href="#" width="41" alt="three buttons that lead to more"> ... </a>
+            <article>
+                <img src="Images/fullyknown_womanhuggingwords.png" width="93" alt="Sculpted album cover">
+                <p>Sculpted</p>
+                <p>3:34</p>
+                <a href="#" width="41" alt="three buttons that lead to more"> ... </a>
+            </article>
+    </section>
+-->
+
+    <!--Section 4-->
+    <!--Add padding and margins-->
+
+    <section class="container margin">
+        <div class="flex-container">
+            <h2>Meet the Musicians</h2>
+        </div>
+        <div class="row display-flex padding-smol flex-wrap">
+            <div class="col-lg-4 col-md-12 text-center">
+                <div>
+                    <article>
+                        <div class="image-container">
+                            <img class="border" src="Images/drum_man.jpg" width="400" alt="Man playing the drums">
+                            <div class='overlay-text tc-white'>
+                                <p>Micheal L. (29)</p>
+                                <p>Drums</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 text-center">
+                <div>
+                    <article>
+                        <div class="image-container">
+                            <img class="border" src="Images/singer_woman.jpg" width="400" alt="Woman singing">
+                            <div class='overlay-text tc-white'>
+                                <p>Stephanie C. (28)</p>
+                                <p>Voice</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 text-center">
+                <div>
+                    <article>
+                        <div class="image-container">
+                            <img class="border" src="Images/keyboard_man.jpg" width="400"
+                                alt="Man playing the keyboard">
+                            <div class='overlay-text tc-white'>
+                                <p>Jordan K. (30)</p>
+                                <p>Piano</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <div class="row display-flex justify-center flex-wrap">
+            <div class="col-lg-4 col-md-12 text-center">
+                <div>
+                    <article>
+                        <div class="image-container">
+                            <img class="border" src="Images/guitar_man.jpg" width="400" alt="Man playing the guitar">
+                            <div class='overlay-text tc-white'>
+                                <p>Luke S. (36)</p>
+                                <p>Guitar</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 text-center">
+                <div>
+                    <article>
+                        <div class="image-container">
+                            <img class="border" src="Images/bass_woman.jpg" width="400" alt="Woman playing the bass">
+                            <div class='overlay-text tc-white'>
+                                <p>Heather D. (32)</p>
+                                <p>Bass</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Section 5-->
+    <section class="margin">
+        <div class="border-flex display-flex flex-wrap">
+            <div class="col-lg-6 col-md-12 bg-brown">
+                <article class="padding">
+                    <h2 class="tc-white">About Us</h2>
+                    <p class="tc-white">The worship artists at Grand Canyon University's Center for Worship Arts
+                        (CWA) continue
+                        to nurture their God-given musical gifts, actively preparing for the next Canyon Worship album
+                        release.
+                        The CWA encourages listeners to check back often for the latest music releases, including
+                        “behind the
+                        music” videos, lyric videos, and live performances, offering insights into the creative and
+                        spiritual process
+                        behind the music. Every purchase of Canyon Worship albums supports the work of the CWA and its
+                        student artists,
+                        allowing them to grow both musically and spiritually while contributing to the university's
+                        mission of
+                        fostering Christian worship and artistic expression.</p>
+                </article>
+            </div>
+            <div class="col-lg-6 col-md-12 no-pad">
+                <img src="Images/yellow_crowd.jpg" width="1200"
+                    alt="A crowd cheering for the band on stage- there are yellow lights">
+            </div>
+        </div>
+    </section>
+
+    <!--Section 6-->
+    <Section class="container margin">
+        <h2>Support Us</h2>
+        <div class="flex-container">
+            <div>
+                <div class="row display-flex padding-smol flex-wrap">
+                    <div class="col-lg-4 col-md-12 text-center">
+                        <div>
+                            <article>
+                                <div class="image-container">
+                                    <img src="Images/fixed-shirt1.jpg" width="400" alt="Fully Known T-Shirt">
+                                    <p class='overlay-text tc-white'>T-Shirt $25</p>
+
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 text-center">
+                        <div>
+                            <article>
+                                <div class="image-container">
+                                    <img src="Images/shirt2.jpg" width="400" alt="Fully Known T-Shirt">
+                                    <p class='overlay-text tc-white'>T-Shirt $25</p>
+
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 text-center">
+                        <div>
+                            <article>
+                                <div class="image-container">
+                                    <img src="Images/shirt3.jpg" width="400" alt="Fully Known T-Shirt">
+                                    <p class='overlay-text tc-white'>T-Shirt $25</p>
+
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </Section>
+
+    <!--Footer-->
+    <footer>
+        <hr>
+        <div class="margin flex-container">
+            <div class="text-center col-md-12">
+                <img src="Images/Icons.jpg" width="263" alt="Icons for Social Media">
+            </div>
+        </div>
+        <article>
+            <div class="flex-container flex-wrap">
+                <div class="col-lg-3 col-md-12 text-center">
+                    <img src="Images/logo_thegrandcollective.jpg" width="110" alt="The Grand Collective">
+                </div>
+                <div class="row display-flex padding-smol">
+                    <div class="col-lg-3 col-md-12 text-center">
+                        <div>
+                            <article>
+                                <div class="image-container">
+                                    <p>Custumer Care</p>
+                                    <div>
+                                        <a href="https://form.jotform.com/243174945528061" class="btn">
+                                        <p>Contact Us</p> </a>
+                                    </div>
+                                    <p>FAQs</p>
+                                    <p>Terms of Service</p>
+                                    <p>Privacy Policy</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12 text-center">
+                        <div>
+                            <article>
+                                <div class="image-container">
+                                    <p>Home</p>
+                                    <p>About Us</p>
+                                    <p>Schedule</p>
+                                    <p>Book a Ticket</p>
+                                    <p>Learn More</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12 text-center">
+                        <div>
+                            <article>
+                                <div class="image-container">
+                                    <p>Extras</p>
+                                    <p>(480) 889 0604</p>
+                                    <p>www./bookingwebsite.com</p>
+                                    <p>Buy Our Music</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>Full copy write, all rights reserved, updated since 2024</p>
+    </footer>
+
+
+    <script src="https://form.jotform.com/static/feedback2.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        var JFL_243174945528061 = new JotformFeedback({
+            formId: '243174945528061',
+            base: 'https://form.jotform.com/',
+            windowTitle: 'The Grand Collective',
+            backgroundColor: '#b8e986',
+            fontColor: '#FFFFFF',
+            type: 'false',
+            height: 500,
+            width: 700,
+            openOnLoad: false
+        });
+    </script>
+    <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
+    <script>window.jotformEmbedHandler("iframe[id='243174945528061']", "https://form.jotform.com/")</script>
+    <a class="btn lightbox-243174945528061" style="
+      margin-top: 16px;
+      text-transform: uppercase;
+      font-size: 14px;
+      text-decoration: none;
+      cursor: pointer;
+      display: inline-block;
+      padding: 10px;
+      font-family: inherit;
+      text-shadow: none;
+      user-select: none;
+      transition: all,.1s,ease-in;
+      background-color: #b8e986;
+      border: 1px solid #b8e986;
+      color: #FFFFFF;
+      ">
+        The Grand Collective
+    </a>
+
+    <script>
+        function closeNav() {
+            document.getElementById("side-menu").style.width = "0";
+            document.getElementById("menu-links").style.opacity = "0"
+        }
+        function openNav() {
+            document.getElementById("side-menu").style.width = "250px";
+            document.getElementById("menu-links").style.opacity = "1"
+        }
+        function openPopup() {
+            var popup = document.getElementById("Popup");
+            popup.classList.toggle("show");
+        }
+    </script>
+
+</body>
+
+
+</html>
