@@ -162,6 +162,9 @@ img {
 .margin {
     margin: 48px auto;
 }
+.margin-smol {
+    margin: 24px;
+}
 
 
 /* Compoinents */
